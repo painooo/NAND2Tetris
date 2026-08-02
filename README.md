@@ -42,7 +42,7 @@ NAND2Tetris
 # Walkthrough
 (This section contains links to notes associated with a section and project name, will be updated as I go through the course)
 - Hardware
-    - Project 1: Boolean Logic
+    - [Project 1](./Project_1/Notes.md): Boolean Logic
     - Project 2: Boolean Arithmetic
     - Project 3: Memory
     - Project 4: Machine Language
