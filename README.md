@@ -3,6 +3,14 @@ NAND2Tetris - Building a computer from first principles
 
 This repository stores notes and [coursework](https://www.nand2tetris.org/course) solutions.
 
+<br>
+
+From the [intro](https://drive.google.com/file/d/1CuvVy2-58iMzs47xEwxkH8npcORnqj5Y/view):
+> According to Carl Rogers "the only kind of
+> learning which significantly influences behavior is 
+> self-discovered or self-appropriated –
+> truth that has been assimilated in experience."
+
 # Organization
 Notes and solutions will be organized by project
 
