@@ -28,7 +28,7 @@
     - Verbal Specification
 - The interface however can be implemented in multiple different ways
 - Because all gates have the same input and output semantics they can then be chained together. For example:
-![Fig1.4](../images/Fig1.4)
+![Fig1.4](../images/Fig1.4.png)
     - Figure 1.4 is an example of **logic design** or **gate logic**
     > **logic design** is the process of interconnecting gates in order to create more complex functions (**composite gates**)
 
