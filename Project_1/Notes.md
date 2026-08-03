@@ -22,16 +22,15 @@
 
 > The simplest gates are made of transistors 
 - Today most gates a implemented with **transistors** etched into silicon which are in turn called **chips**
-- The **gate interface** is *unique* and there is only one way to describe them.
-    - Truth tables
-    - Boolean expressions
-    - Verbal Specification
-- The interface however can be implemented in multiple different ways
 - Because all gates have the same input and output semantics they can then be chained together. For example:
 ![Fig1.4](../images/Fig1.4.png)
     - Figure 1.4 is an example of **logic design** or **gate logic**
     > **logic design** is the process of interconnecting gates in order to create more complex functions (**composite gates**)
+ 
+    - The **gate interface** is *unique* and there is only one way to describe them.
+        - Truth tables
+        - Boolean expressions
+        - Verbal Specification
+    - The interface however can be implemented in multiple different ways
 
-    > **composite gates** are implementations of Boolean functions and so their outside appearance looks just like **primitive gates** while also containing complex internal structures
-
-> Today hardware designers plan and optimize chips with Hardware Description Languages on their computers
+- Today hardware designers plan and optimize chips with **Hardware Description Languages** on their computers
