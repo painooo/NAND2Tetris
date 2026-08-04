@@ -1,6 +1,8 @@
 # Boolean Arithmetic
 > Most operations performed by computers can be reduced down to *elementary addition of binary numbers*
 
+> The ALU a core component of computers as it controls all things arithmetic and logic 
+
 ## Binary Numbers
 - The binary system is founded on **base 2**
 - To convert from any base to decimal (base 10) we can use:
