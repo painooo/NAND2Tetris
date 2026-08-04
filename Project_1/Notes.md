@@ -2,6 +2,8 @@
 
 > Boolean Algebra plays a significant role in hardware architecture
 
+> All other chips are made from the same building blocks: **elementary logic gates**
+
 ## Boolean Functions
 >Functions can be represented with **truth tables** or **operations** (AND, OR, NOT) **over it's input variables** (A AND B) 
 
