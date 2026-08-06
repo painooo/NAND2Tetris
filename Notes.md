@@ -11,8 +11,7 @@
         3. In this image we see how when we implment an ALU we only see the lementary logic gates not the NAND gate, when we implement VM code we only see machine language not everything before that, and when we eventually get to where we create a program we don't see every logic gates we just see the high-level language.
 
 - Notes taking
-    1. Write down all of the ideas learned
-        - What an idea is depends on the learner
-        - For example, reading this *"Unlike the decimal system, which is founded on base 10, the binary system is founded on base 2" ([src](https://b1391bd6-da3d-477d-8c01-38cdf774495a.filesusr.com/ugd/44046b_f0eaab042ba042dcb58f3e08b46bb4d7.pdf))* I immediately pick up that **"binary system is founded on base 2 and decimal system is founded on base10"**
-    2. Structure the content in a meaningful way
-    3. Review & Revise 
+    1. Write down all information gotten from the source (Rough draft)
+    2. Define the purpose of the what should be noted down
+    3. Write down & structure notes
+    4. Review & revise 
