@@ -1,37 +1,32 @@
 # Boolean Logic
+Purpose: Describe logic gates
 
-> Boolean Algebra plays a significant role in hardware architecture
+- Every digital device are built from **chips** designed to store and process information  
 
-> Using **elementary logic gates** (which can be built from **primitive logic gates** like NAND or NOR) we can build **all** other processing and storage chips
-## Boolean Functions
->Functions can be represented with **truth tables** or **operations** (AND, OR, NOT) **over it's input variables** (A AND B) 
+- **Chips** are in turn built from **logic gates** whose behavior is consistent across devices
 
-> All functions can be defined with at least one expression called the **cannonical representation**
+> **Boolean Algebra** deals with binary/boolean and so plays a big role in implementing logic gates
 
-- To get the **cannonical representation** we can..
-    1. Take all of the true cases (those which output 1)
-    2. Construct a term by AND-ing together literals
-    3. Connect all terms with ORs
-    - We can then simplify this representation with laws found in Boolean Algebra
-- The number of Boolean functions which can be defined over n is 2^(2^n)
-- Each boolean function has a conventional name which sees to define the the underlying operation
+- **Logic gates** are physical/hardware implementations of **boolean functions**
 
-## Gates
-> A gate is a physical device which implements a boolean function
+- **Logic gates** all have the same input and output semantics meaning they can be chained together to create **composite gates** of arbitrary complexity
 
-> All logic gates have the same input and output semantics (1's and 0's)
+- **Boolean functions** can be specified with truth tables or expressions
+    - Truth tables can be thought of as the interface
+    - Expressions can be thought of as the implementation
 
-> The simplest gates are made of transistors 
-- Today most gates a implemented with **transistors** etched into silicon which are in turn called **chips**
-- Because all gates have the same input and output semantics they can then be chained together. For example:
-![Fig1.4](../images/Fig1.4.png)
-    - Figure 1.4 is an example of **logic design** or **gate logic**
-    > **logic design** is the process of interconnecting gates in order to create more complex functions (**composite gates**)
- 
-    - The **gate interface** is *unique* and there is only one way to describe them.
-        - Truth tables
-        - Boolean expressions
-        - Verbal Specification
-    - The interface however can be implemented in multiple different ways
+- One of the simplest ways to get the expression from the truth table is to use the **cannonical representation**
+    1. Take all of the true cases
+    2. Construct a term by And-ing together literals
+    3. Connect all terms with Or's
 
-- Today hardware designers plan and optimize chips with **Hardware Description Languages** on their computers
+For example:
+| A | B | o |
+|---|---|---|
+| 0 | 0 | 0 |
+| 1 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 1 | 0 |
+
+1. A*-B and -A*B | AND together literals of true cases
+2. -AB + A*-B........| OR together both terms
