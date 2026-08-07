@@ -16,3 +16,8 @@ Purpose: Describe machine language
 
 > - The symbolic notations is called **assembly**
 > - The program which translates **assembly** into binary is called an **assembler**
+
+- The **CPU** will only execute **instructions** inside the **instruction memory** which is implemented in the **ROM** (**Read-Only Memory**) chip
+- For example, when your laptop starts up the CPU will:
+    1. Read the ROM which tells it to boot up the BIOS
+    2. The BIOS will then tell it how to continue from there like reading further instructions from a media to boot the OS
