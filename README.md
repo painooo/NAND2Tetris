@@ -44,7 +44,7 @@ NAND2Tetris
 - Hardware
     - [Project 1](./Project_1/Notes.md): Boolean Logic
     - [Project 2](./Project_2/Notes.md): Boolean Arithmetic
-    - Project 3: Memory
+    - [Project 3](./Project_3/Notes.md): Memory
     - Project 4: Machine Language
     - Project 5: Computer Architecture
     - Project 6: Assembler
