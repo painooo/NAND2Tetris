@@ -1,30 +1,40 @@
 # Memory / Sequential Logic
-> Chips in previous projects are known as **combinational chips** meaning they depend on **combinations** of their inputs. This also means that they aren't able to keep state
+Purpose: Describe memory & sequential chips (DFF)
 
-> Computers must be able to process and store (& recall) information
+> - A chips from previous chapters are combinational chips
+> - Combinational chips depend on the combination of solely their inputs
+> - Though they can provide very important functions, they cannot maintain state
+>    - (I like to think of them like Pure Functions)
 
-> Memory is built from sequential chips
+- **Memory elements** are built from **sequential chips**
 
-TODO: Organize this
+- **Memory elements** involve the careful management of **synchonization**, **clocking**, and **feedback loops**
+    - Most of this is embedded into **sequential gates** known as **flip-flops**
+    - Of such **flip-flops** is the **data flip-flop** (**DFF**)
 
-- Memory involves synchronization, clocking, and feedback loops
-    - Most of this can be implemented using sequential gates known as **flip-flops**
-    - Using **flip-flops** we'll be able to build all sorts of memory devices ranging from binary cells to registers to memory banks and counters
-- To remember stuff is time dependent
-    - "You remember now what has been committed to memory before"
-    - In order to build chips which remember we must have a way representing time
-- Time is usually tracked with a master clock
-- The clock is implemented through an oscillator
-    - which alternates between 0's and 1's
-    - The time between the start of a 0 and a 1 is called a cycle
-- The most elementary sequential element in a computer is a **flip-flop**
-    - A variant of this is the **DFF** (data flip-flop)
-        - The DFF outputs the input from the previous clock cycle
-- A register is a storage device which can store a value
-- RAM should be able to randomly access any chosen words w/o restriction
-    - In order to access the registers which store the words, we need a circuit which given an address is able to select the register for the word
-    - A word is how big a piece of data is
-    - Size is how many words are able to be fitted inside the RAM
-- A Counter is a sequential chip which increments every clock cycle
-    - A Counter is typically used in a CPU to point to the next instruction address
-- Sometimes different registers might take different times to reach the ALU and the ALU being a combinational chip won't care about time. To solve this we will make the clock cycle be longer than the longest time it takes for the furthest register to reach the ALU.
+- Most computers have a master clock
+    - Which is implemented as an oscilator between 0-1, low-high, tick-tock, etc
+    - The time between a tick and a tock is called a **cycle**
+    > - In between clock cycles chips are allowed to output trash, requiring only when the next clock cycle begins they output the correct value
+    > - This means that if two registers arrived at different times to a combinational chip it is allowed to output garbage until the clock cycle ends (AND we need to make sure the clock cycle is longer than the longest time for the register to arrive)
+    - This clock's signal is broadcasted to every sequential chip on the board
+
+- **Sequential chips** are constructed by sandwiching a layer of **DFF**s between *optional* **combinational chips** feeding back into it self
+
+- **DFF** are implemented as such that it's out(time) = in(time-1)
+    - This means that it's output is the input from a previous clock cycle
+
+> Using **flip-flops** we can construct every other memory elements
+
+- A **register** is a **sequential chip** which can store data over time & load in new data
+
+> 1. By connecting multiple different **1-bit registers** we get a multi-bit register
+>    - The multi-bit content of registers are usually known as words
+>
+> 2. By connecting multiple different **multi-bit registers** we get a memory bank of any size
+>    - (This can be used to form **RAM**)
+
+- Read/write operations on **RAM** should be able access any random chosen word at the **same speed**
+
+- A **counter** is a **sequential chip** whose state is an integer number incrementing every clock cycle
+    - The CPU includes a program counter whose output defines the next instruction to run
