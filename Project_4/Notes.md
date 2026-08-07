@@ -20,4 +20,5 @@ Purpose: Describe machine language
 - The **CPU** will only execute **instructions** inside the **instruction memory** which is implemented in the **ROM** (**Read-Only Memory**) chip
 - For example, when your laptop starts up the CPU will:
     1. Read the ROM which tells it to boot up the BIOS
-    2. The BIOS will then tell it how to continue from there like reading further instructions from a media to boot the OS
+    2. The BIOS might then boot up the OS in RAM
+    3. And then point the cpu towards that particular address in RAM to continue execution
