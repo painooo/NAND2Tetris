@@ -19,7 +19,7 @@ truth that has been assimilated in experience."
 (Links will be added while progressing through projects)
 - [Part 1](https://drive.google.com/file/d/1CuvVy2-58iMzs47xEwxkH8npcORnqj5Y/view): Hardware
     - [Project 1](./Project_1/notes.md): Boolean Logic
-    - Project 2: Boolean Arithmetic
+    - [Project 2](./Project_2/notes.md): Boolean Arithmetic
     - Project 3: Memory
     - Project 4: Machine Language
     - Project 5: Computer Architecture
